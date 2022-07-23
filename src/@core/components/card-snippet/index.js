@@ -15,13 +15,13 @@ const CardSnippet = props => {
   // ** State
   const [isOpen, setIsOpen] = useState(false)
 
-  // ** If user passes custom icon then render that else render default icon
+  // ** If mentor passes custom icon then render that else render default icon
   const IconCode = iconCode ? iconCode : <Code size={15} />
 
   // ** To toggle collapse
   const toggle = () => setIsOpen(!isOpen)
 
-  // ** If user passes noBody then return <Fragment> else return <CardBody>
+  // ** If mentor passes noBody then return <Fragment> else return <CardBody>
   const Wrapper = noBody ? Fragment : CardBody
 
   return (

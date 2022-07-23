@@ -472,7 +472,7 @@ mock.onGet('/apps/ecommerce/cart').reply(() => {
 })
 
 // ------------------------------------------------
-// POST: Add Item in user Cart
+// POST: Add Item in mentor Cart
 // ------------------------------------------------
 mock.onPost('/apps/ecommerce/cart').reply(config => {
   // Get product from post data
@@ -492,7 +492,7 @@ mock.onPost('/apps/ecommerce/cart').reply(config => {
 })
 
 // ------------------------------------------------
-// DELETE: Remove Item from user Cart
+// DELETE: Remove Item from mentor Cart
 // ------------------------------------------------
 mock.onDelete(/\/apps\/ecommerce\/cart\/\d+/).reply(config => {
   // Get product id from URL
@@ -508,7 +508,7 @@ mock.onDelete(/\/apps\/ecommerce\/cart\/\d+/).reply(config => {
 })
 
 // ------------------------------------------------
-// POST: Add Item in user Wishlist
+// POST: Add Item in mentor Wishlist
 // ------------------------------------------------
 mock.onPost('/apps/ecommerce/wishlist').reply(config => {
   // Get product from post data
@@ -527,7 +527,7 @@ mock.onPost('/apps/ecommerce/wishlist').reply(config => {
 })
 
 // ------------------------------------------------
-// DELETE: Remove Item from user Wishlist
+// DELETE: Remove Item from mentor Wishlist
 // ------------------------------------------------
 mock.onDelete(/\/apps\/ecommerce\/wishlist\/\d+/).reply(config => {
   // Get product id from URL

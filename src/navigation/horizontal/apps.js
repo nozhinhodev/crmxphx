@@ -132,13 +132,13 @@ export default [
             id: 'list',
             title: 'List',
             icon: <Circle />,
-            navLink: '/apps/user/list'
+            navLink: '/apps/mentor/list'
           },
           {
             id: 'view',
             title: 'View',
             icon: <Circle />,
-            navLink: '/apps/user/view'
+            navLink: '/apps/mentor/view'
           }
         ]
       }

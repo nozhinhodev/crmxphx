@@ -46,7 +46,7 @@ const ChatLog = props => {
     chatContainer.scrollTop = Number.MAX_SAFE_INTEGER
   }
 
-  // ** If user chat is not empty scrollToBottom
+  // ** If mentor chat is not empty scrollToBottom
   useEffect(() => {
     const selectedUserLen = Object.keys(selectedUser).length
 
@@ -92,7 +92,7 @@ const ChatLog = props => {
     return formattedChatLog
   }
 
-  // ** Renders user chat
+  // ** Renders mentor chat
   const renderChats = () => {
     return formattedChatData().map((item, index) => {
       return (

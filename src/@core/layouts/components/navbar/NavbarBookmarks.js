@@ -62,7 +62,7 @@ const NavbarBookmarks = props => {
     }
   }
 
-  // ** If user has more than 10 bookmarks then add the extra Bookmarks to a dropdown
+  // ** If mentor has more than 10 bookmarks then add the extra Bookmarks to a dropdown
   const renderExtraBookmarksDropdown = () => {
     if (store.bookmarks.length && store.bookmarks.length >= 11) {
       return (

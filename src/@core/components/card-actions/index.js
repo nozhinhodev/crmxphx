@@ -44,7 +44,7 @@ const CardActions = props => {
   // ** Renders card actions
   const renderIcons = () => {
     /**
-     ** IF: user passes array of actions then loop through them & render all of the actions
+     ** IF: mentor passes array of actions then loop through them & render all of the actions
      ** ELSE: render single action
      */
 
@@ -73,17 +73,17 @@ const CardActions = props => {
     setReload(false)
   }
 
-  // ** If user passes endReload function call it.
+  // ** If mentor passes endReload function call it.
   useEffect(() => {
     if (reload) {
       endReload(removeReload)
     }
   })
 
-  // ** If user passes collapse action then return <Collapse> as Wrapper else return <Fragment>
+  // ** If mentor passes collapse action then return <Collapse> as Wrapper else return <Fragment>
   const CollapseWrapper = actions === 'collapse' || actions.includes('collapse') ? Collapse : Fragment
 
-  // ** If user passes reload action then return <BlockUi> as Wrapper else return <Fragment>
+  // ** If mentor passes reload action then return <BlockUi> as Wrapper else return <Fragment>
   const BlockUiWrapper = actions === 'reload' || actions.includes('reload') ? UiLoader : Fragment
 
   return (

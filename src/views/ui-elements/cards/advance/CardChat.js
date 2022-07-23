@@ -103,7 +103,7 @@ const CardChat = () => {
     return formattedChatLog
   }
 
-  //** Renders user chat
+  //** Renders mentor chat
   const renderChats = () => {
     return formattedChatData().map((item, index) => {
       return (

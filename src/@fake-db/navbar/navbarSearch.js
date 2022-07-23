@@ -123,7 +123,7 @@ export const searchArr = [
         isBookmarked: false,
         title: 'User List',
         icon: 'User',
-        link: '/apps/user/list'
+        link: '/apps/mentor/list'
       },
       {
         id: 16,
@@ -131,7 +131,7 @@ export const searchArr = [
         isBookmarked: false,
         title: 'User View',
         icon: 'User',
-        link: '/apps/user/view'
+        link: '/apps/mentor/view'
       },
       {
         id: 18,

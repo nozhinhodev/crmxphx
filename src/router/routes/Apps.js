@@ -18,8 +18,11 @@ const EcommerceDetail = lazy(() => import('../../views/apps/ecommerce/detail'))
 const EcommerceWishlist = lazy(() => import('../../views/apps/ecommerce/wishlist'))
 const EcommerceCheckout = lazy(() => import('../../views/apps/ecommerce/checkout'))
 
-const UserList = lazy(() => import('../../views/apps/user/list'))
-const UserView = lazy(() => import('../../views/apps/user/view'))
+const MentorList = lazy(() => import('../../views/apps/mentor/list'))
+const MentorView = lazy(() => import('../../views/apps/mentor/view'))
+
+const StudentList = lazy(() => import('../../views/apps/student/list'))
+const StudentView = lazy(() => import('../../views/apps/student/view'))
 
 const Roles = lazy(() => import('../../views/apps/roles-permissions/roles'))
 const Permissions = lazy(() => import('../../views/apps/roles-permissions/permissions'))
@@ -156,16 +159,20 @@ const AppRoutes = [
     }
   },
   {
-    element: <UserList />,
-    path: '/apps/user/list'
+    element: <MentorList />,
+    path: '/apps/mentor/list'
   },
   {
-    path: '/apps/user/view',
-    element: <Navigate to='/apps/user/view/1' />
+    element: <MentorView />,
+    path: '/apps/mentor/view/:id'
   },
   {
-    element: <UserView />,
-    path: '/apps/user/view/:id'
+    element: <StudentList />,
+    path: '/apps/student/list'
+  },
+  {
+    element: <StudentView />,
+    path: '/apps/student/view/:id'
   },
   {
     element: <Roles />,

@@ -729,8 +729,8 @@ const data = {
 // GET ALL DATA
 mock.onGet('/api/users/list/all-data').reply(200, data.users)
 
-// POST: Add new user
-mock.onPost('/apps/users/add-user').reply(config => {
+// POST: Add new mentor
+mock.onPost('/apps/users/add-mentor').reply(config => {
   // Get event from post data
   const user = JSON.parse(config.data)
   const highestValue = data.users.reduce((a, b) => (a.id > b.id ? a : b)).id
@@ -783,7 +783,7 @@ mock.onGet('/api/users/list/data').reply(config => {
 })
 
 // GET USER
-mock.onGet('/api/users/user').reply(config => {
+mock.onGet('/api/users/mentor').reply(config => {
   const { id } = config
   const user = data.users.find(i => i.id === id)
   return [200, { user }]
@@ -791,7 +791,7 @@ mock.onGet('/api/users/user').reply(config => {
 
 // DELETE: Deletes User
 mock.onDelete('/apps/users/delete').reply(config => {
-  // Get user id from URL
+  // Get mentor id from URL
   let userId = config.id
 
   // Convert Id to number

@@ -24,7 +24,7 @@ const Sidebar = props => {
     ...rest
   } = props
 
-  // ** If user passes custom close btn render that else default close btn
+  // ** If mentor passes custom close btn render that else default close btn
   const renderCloseBtn = closeBtn ? closeBtn : <X className='cursor-pointer' size={15} onClick={toggleSidebar} />
 
   return (

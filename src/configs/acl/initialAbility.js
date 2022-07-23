@@ -1,4 +1,4 @@
-// ** Initial user ability
+// ** Initial mentor ability
 export const initialAbility = [
   {
     action: 'read',

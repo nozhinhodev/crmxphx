@@ -119,7 +119,7 @@ mock.onPost('/jwt/register').reply(request => {
         ]
       }
 
-      // Add user id
+      // Add mentor id
       const length = data.users.length
       let lastIndex = 0
       if (length) {

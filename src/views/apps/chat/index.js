@@ -37,7 +37,7 @@ const AppChat = () => {
     setUserSidebarLeft(false)
   }
 
-  // ** Set user function for Right Sidebar
+  // ** Set mentor function for Right Sidebar
   const handleUser = obj => setUser(obj)
 
   // ** Get data on Mount

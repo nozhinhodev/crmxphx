@@ -234,7 +234,7 @@ mock.onGet('/apps/chat/chats-and-contacts').reply(() => {
 // ------------------------------------------------
 // GET: Return User Profile
 // ------------------------------------------------
-mock.onGet('/apps/chat/users/profile-user').reply(() => [200, data.profileUser])
+mock.onGet('/apps/chat/users/profile-mentor').reply(() => [200, data.profileUser])
 
 // ------------------------------------------------
 // GET: Return Single Chat
@@ -268,7 +268,7 @@ mock.onPost('/apps/chat/send-msg').reply(config => {
     time: new Date(),
     senderId: 11
   }
-  // If there's new chat for user create one
+  // If there's new chat for mentor create one
   let isNewChat = false
   if (activeChat === undefined) {
     isNewChat = true

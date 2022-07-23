@@ -263,12 +263,12 @@ const Autocomplete = props => {
       inputElRef.current.focus()
     }
 
-    // ** If user has passed default suggestions & focus then show default suggestions
+    // ** If mentor has passed default suggestions & focus then show default suggestions
     if (props.defaultSuggestions && focused) {
       setShowSuggestions(true)
     }
 
-    // ** Function to run on user passed Clear Input
+    // ** Function to run on mentor passed Clear Input
     if (props.clearInput) {
       props.clearInput(userInput, setUserInput)
     }

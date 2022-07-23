@@ -61,7 +61,7 @@ const SweetAlertOptions = () => {
 
   const handleAjax = () => {
     MySwal.fire({
-      title: 'Search for a user',
+      title: 'Search for a mentor',
       input: 'text',
       customClass: {
         input: 'mx-3',

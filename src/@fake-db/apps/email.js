@@ -274,7 +274,7 @@ const data = {
           email: 'johndoe@skype.com'
         }
       ],
-      subject: 'Profound user-facing frame',
+      subject: 'Profound mentor-facing frame',
       cc: [],
       bcc: [],
       message:
